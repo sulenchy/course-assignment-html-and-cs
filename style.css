@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+body {
+    background-size: cover;
+}
+
+.error {
+    border: 3px solid #ff9900;
+    padding: 5px;
+    color: #ff9900;
+    background: black;
+    font-size: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.subheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+.subheader a {
+    color: white;
+    background-color: black;
+}
+
+.just-added img, .my-videos img {
+    width: 100%;
+    height: 100%;
+}
+
+.just-added, .my-videos {
+    display: grid;
+}
+
+.just-added {
+    background-color: black;
+}
+
+.my-videos {
+    background-color: black;
+    margin-bottom: 50px;
+}
+
+.cta-circles-home img {
+    width: 100%;
+    height: 100%;
+}
+
+.about, .contact {
+    color: white;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 50px;
+    background-color: black;
+    margin-left: 45%;
+    margin-right: 45%;
+}
+
+.contact h1 {
+    font-size: 50px;
+}
+
+.contact h2, h3 {
+    font-size: 30px;
+}
+
+.contact img {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.form-header {
+    background-color: #ff9900;
+    width: 100%;
+}
+
+.form-header h4 {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.form-input {
+    width: 100%;
+    background: white;
+    font-size: 15px;
+}
+
+.form-input-margins {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-input label {
+    display: none;
+}
+
+.input-name {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.input-firstname, .input-lastname {
+    min-width: 0;
+    width: 100%;
+    font-size: 15px;
+}
+
+.input-email {
+    width:100%;
+    min-width: none;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.message-input {
+    min-width: 0;
+    box-sizing: border-box;
+    width: 100%;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+.message-submit {
+    text-align: center;
+}
+
+.message-submit a {
+    color: black;
+    text-decoration: none;
+}
+
+.btn {
+    color: white;
+    background-color: #ff9900;
+    border: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.categories-page h1, .all-videos h1, .most-popular h1, .collections h1, .my-videos-page h1, .just-added-page h1, .categories-headings h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    background-color: black;
+}
+
+.categories-page, .all-videos, .most-popular, .collections, .my-videos-page, .just-added-page, .categories-headings {
+    color: white;
+    text-align: center;
+}
+
+.cta-circles-categories img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.cta-circles-categories {
+    display: grid;
+}
+
+.all-videos-images img, .most-popular-images img, .my-videos-page-images img, .just-added-page-images img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 501px) {
+    main {
+        margin-top: 250px;
+    }
+
+    body {
+        background-image: url("../images/background.jpg");
+    }
+
+    .subheader {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .just-added, .my-videos {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+
+    .just-added, .my-videos {
+        padding: 20px;
+    }
+
+    .cta-circles-home {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
+        gap: 50px;
+    }
+
+    .categories-page h1, .most-popular h1, .collections h1, .my-videos-page h1, .just-added-page h1, .all-videos h1, .categories-headings h1 {
+        margin-left: 44%;
+        margin-right: 44%;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: row;
+        background: #0008;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    .about-info-container {
+        align-items: center;
+    }
+
+    .about img {
+        width: 50%;
+        height: auto;
+        min-width: 550px;
+    }
+
+    .about p {
+        margin-right: 100px;
+        letter-spacing: 0.5px;
+        padding: 30px;
+        font-size: 30px;
+        text-align: left;
+    }
+
+    .contact-page {
+        background-color: black;
+        margin-left: 35%;
+        margin-right: 35%;
+    }    
+
+    .contact h1 {
+        margin-bottom: 50px;
+    }
+
+    .contact h3 {
+        margin-top: 50px;
+    }
+
+    .contact p {
+        font-size: 20px;
+    }
+
+    .contact img {
+        margin-top: 20px;
+        size: 20%;
+    }
+
+    .form-container {
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 550px;
+        max-height: 600px;
+    }
+
+    .form-margins {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .categories-page {
+        font-size: 50px;
+    }
+    
+    .cta-circles-categories {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        row-gap: 30px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    .all-videos-images, .most-popular-images, .my-videos-page-images, .just-added-page-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+        row-gap: 20px;
+        padding: 20px;
+        background-color: #0008;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        background-color: black;
+    }
+
+    .subheader {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .just-added, .my-videos {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 15px;
+        row-gap: 15px;
+    }
+    
+    .just-added, .my-videos {
+        padding: 10px;
+    }
+
+    .cta-circles-home {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 30px;
+    }
+    
+    .cta-circles-home {
+        padding: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    } 
+
+    .about h1 {
+        margin-bottom: 30px;
+    }
+
+    .about img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .about p {
+        text-align: center;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 25px;
+        letter-spacing: 0.5px;
+        font-size: 20px;
+    }
+
+    .contact h1 {
+        margin-bottom: 30px;
+    }
+
+    .contact h2 p, h3 p {
+        font-size: 15px;
+    }
+
+    .contact h3 {
+        margin-top: 30px;
+    }
+
+    .contact img {
+        margin-top: 15px;
+        width: 60%;
+        height: auto;
+    }
+
+    .form-container {
+        margin-top: 30px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .categories-page {
+        font-size: 30px;
+    }
+    
+    .cta-circles-categories {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 30px;
+    }
+    
+    .cta-circles-categories {
+        padding: 20px;
+        margin-bottom: 50px;
+    } 
+
+    .all-videos-images, .most-popular-images, .my-videos-page-images, .just-added-page-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 15px;
+        row-gap: 15px;
+        padding: 10px;
+    }
+}

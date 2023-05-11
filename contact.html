@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The contact page of Square Eyes">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="https://kit.fontawesome.com/6fb668811a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="loader.css">
+    <script defer src="js/loader.js"></script>
+</head>
+<body>
+    <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+    </div>
+
+    <header>
+        <div>
+            <input type="checkbox" id="menu-checkbox">
+            <label for="menu-checkbox" class="hamburger-icon"><span class="hide">Anything</span><i class="fas fa-bars"></i></label>
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
+        </div>
+        <a href="checkout.html" class="cart" alt="cart content"><span class="hide">Anything</span><i class="fa fa-cart-shopping"></i></a>
+    </header>
+
+    <main class="contact-page">
+        <div class="loader"></div>
+        <div class="contact">
+            <h1>Contact</h1> 
+            <h2>Call us</h2>
+            <p>+1 102-501-1132</p>
+            <h3>Location</h3>
+            <p>416 W 8th St, Los Angeles, CA 90014, USA</p>
+            <img src="/images/Location.png" alt="Location">
+        </div>
+        <div class="form-margins">
+            <form class="form-container">
+                <div class="form-header">
+                    <h4>Send us a message</h4>
+                </div>
+                <div class="form-input">
+                    <div class="form-input-margins">
+                        <p>name</p>
+                        <div class="input-name">
+                            <label for="fname">Please enter your first name in the box</label>
+                            <input id="fname" placeholder="First" class="input-firstname"/>
+                            <label for="lname">Please enter your last name in the box</label>
+                            <input id="lname" placeholder="Last" class="input-lastname"/>
+                        </div>
+                        <p>Email</p>
+                        <label for="email">Please enter your email in the box below</label>
+                        <input id="email" placeholder="" size="48" class="input-email"/>
+                        <p>type your message here</p>
+                        <label for="message-input">Please type your message in the box</label>
+                        <textarea input id="message-input" rows="4" cols="40" class="message-input"></textarea>
+                        <div class="message-submit">
+                            <button type="message-button" class="btn">
+                                <a href="index.html">
+                                Send Message
+                                </a>
+                            </button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+         
+    <footer>
+        <div>
+            <a href="#" class="fa fa-facebook"><span class="hide">Anything</span></a>
+            <a href="#" class="fa fa-twitter"><span class="hide">Anything</span></a>
+            <a href="#" class="fa fa-instagram"><span class="hide">Anything</span></a>
+        </div>
+        <p>&copy; SquareEyes. All rights reserved</p>
+    </footer>    
+</body>
+</html>

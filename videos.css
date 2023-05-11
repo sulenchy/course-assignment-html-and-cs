@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.hide {
+    display: none;
+}
+
+/* .video img {
+    width: 100%;
+    height: 100%;
+} */
+
+.video h1 {
+    color: white;
+    margin-left: 10px;
+    letter-spacing: 2px;
+}
+
+.video pre {
+    color: #a5a5a5;
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+
+.video p {
+    color: white;
+    margin: 10px;
+    letter-spacing: 0.5px;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.categories a {
+    color: black;
+    text-decoration: none;
+}
+
+.buttons-categories {
+    background: white;
+    margin: 10px;
+    letter-spacing: 0.5px;
+    border-radius: 15px;
+    border-style: none;
+    height: 30px;
+    text-align: center;
+}
+
+.multicolortext1 .director1, .multicolortext2 .stars1 {
+    color: white;
+    margin-left: 10px;
+    letter-spacing: 0.5px;
+}
+
+.multicolortext1 .director2, .multicolortext2 .stars2 {
+    color: #a5a5a5;
+    letter-spacing: 0.5px;
+}
+
+.video h2 {
+    color: white;
+    margin: 10px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buttons a {
+    color: black;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.addtocart {
+    background: #ff9900;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    border-style: none;
+}
+
+.watchnow {
+    background: #47CB19;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    border-style: none;
+}
+
+@media (min-width: 501px) {
+    main {
+        margin-top: 250px;
+    }
+}
+
+@media (min-width: 1201px) {
+    .video {
+        position: relative;
+        display: flex;
+        background-color: black;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .video-info-container {
+        /* position: absolute; */
+        /* width: 50%; */
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    /* .video img {
+        opacity: 0.7;
+    } */
+    
+    .video img {
+        width: 50%;
+        height: auto;
+        min-width: 550px;
+    }
+
+    .video h1 {
+        font-size: 50px;
+    }
+
+    .video pre {
+        font-size: 20px;
+    }
+
+    .video p {
+        font-size: 25px;
+        margin-right: 200px;
+    }
+
+    .buttons-categories {
+        font-size: 20px;
+        width: 10%;     
+    }
+
+    .multicolortext1 .director1, .multicolortext1 .director2, .multicolortext2 .stars1, .multicolortext2 .stars2 { 
+        font-size: 20px;
+    }
+
+    .video h2 {
+        font-size: 50px;
+    }
+
+    .buttons a {
+        font-size: 30px;
+    }
+
+    .addtocart, .watchnow {
+        width: 20%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .video img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .video h1 {
+        font-size: 35px;
+    }
+    
+    .video pre, .video p {
+        font-size: 15px;
+    }
+
+    .buttons-categories {
+        font-size: 15px;
+        width: 15%;
+    }
+
+    .multicolortext1 .director1, .multicolortext1 .director2, .multicolortext2 .stars1, .multicolortext2 .stars2 {
+        font-size: 15px;
+    }
+
+    .video h2 {
+        font-size: 30px;
+    }
+
+    .buttons a {
+        font-size: 20px;
+    }
+
+    .addtocart, .watchnow {
+        width: 35%;
+    }
+}
